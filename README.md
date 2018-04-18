@@ -90,6 +90,18 @@ Display pods list
     kubectl get pods -o wide
 
 
+
+At the end delete ressource before stop cluster
+
+$ kubectl delete service hello-node
+service "hello-node" deleted
+
+$ kubectl delete deployment hello-node
+deployment "hello-node" deleted
+
+
+Reference
+
 [1] https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
 
 [2] http://www.bogotobogo.com/DevOps/DevOps-Kubernetes-1-Running-Kubernetes-Locally-via-Minikube.php
