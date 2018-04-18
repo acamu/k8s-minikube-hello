@@ -78,6 +78,10 @@ Check the service created
 Open service in a browser
 
     minikube service hello-node
+    
+    Test the scalling
+    
+    kubectl scale deployments/hello-node --replicas=2
 
 
 [1] https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
