@@ -40,13 +40,36 @@ Build the dockerfile (do not forget the "." at the end of the cmd line) n
 
     docker build -t hello-node:v1 .
     
+   View deployment
    
+    kubectl get deployments
    
+   View pds
    
-
+    kubectl get pods
+   
+   Display events
+   
+    kubectl get events
+   
+   Display condif
+   
+    kubectl config view
+    
+    
+    
+    
+   
 List the services exposed via a node port: 
 
     minikube service list
+
+Create a deployment on the cluster kub
+
+    kubectl run hello-node --image=hello-node:v1 --port=8080
+
+
+
 
 
 [1] https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
