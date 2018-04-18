@@ -79,9 +79,13 @@ Open service in a browser
 
     minikube service hello-node
     
-    Test the scalling
+Test the scalling
     
     kubectl scale deployments/hello-node --replicas=2
+
+Display pods list
+
+    kubectl get pods -o wide
 
 
 [1] https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
