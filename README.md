@@ -35,6 +35,8 @@ Make sure you will use minikue deamon
 
     eval $(minikube docker-env)
     
+ After if you don't need use of minikuke env $ eval $(minikube docker-env -u)
+    
     
 Build the dockerfile (do not forget the "." at the end of the cmd line) n
 
