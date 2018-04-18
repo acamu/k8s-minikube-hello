@@ -57,7 +57,9 @@ Build the dockerfile (do not forget the "." at the end of the cmd line) n
     kubectl config view
     
     
-    
+ ### Create a service
+ 
+    kubectl expose deployment hello-node --type=LoadBalancer
     
    
 List the services exposed via a node port: 
@@ -69,7 +71,13 @@ Create a deployment on the cluster kub
     kubectl run hello-node --image=hello-node:v1 --port=8080
 
 
+Check the service created
 
+    kubectl get services
+
+Open service in a browser
+
+    minikube service hello-node
 
 
 [1] https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
